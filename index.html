@@ -1,16 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>PoweredByG</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PoweredByG | Premier Web Development Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="header"> 
-        <h1>Welcome to PoweredByG</h1>
+
+  <header class="navbar">
+    <div class="logo">PoweredBy<span>G</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact" class="btn-primary">Get in Touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Web Design & Infrastructure</span>
+      <h1>Engineered for Performance. Built for Growth.</h1>
+      <p>We build ultra-fast, high-converting websites and modern web platforms tailored to elevate your brand.</p>
+      <div class="hero-btns">
+        <a href="#work" class="btn-primary">View Our Work</a>
+        <a href="#contact" class="btn-secondary">Start a Project</a>
+      </div>
     </div>
-    <script src="scripts.js"></script>
+  </section>
+
+  <section id="services" class="services">
+    <h2>What We Do</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Custom Web Development</h3>
+        <p>Bespoke web applications and responsive sites tailored to your unique requirements using modern frameworks.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX & Web Design</h3>
+        <p>Clean, intuitive user experiences designed to maximize customer engagement and brand perception.</p>
+      </div>
+      <div class="card">
+        <h3>Performance & Optimization</h3>
+        <p>Speed optimization, SEO best practices, and clean code architecture to ensure quick load times.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <h2>Featured Work</h2>
+    <div class="grid-2">
+      <div class="portfolio-item">
+        <div class="image-placeholder">Project Alpha</div>
+        <div class="item-info">
+          <h4>E-Commerce Platform</h4>
+          <p>Full-stack web application optimized for conversion and fast checkout.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="image-placeholder">Project Beta</div>
+        <div class="item-info">
+          <h4>Corporate Web Suite</h4>
+          <p>Modern brand identity and responsive site for scalable business growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Ready to Build?</h2>
+    <p>Tell us about your goals and let’s create something exceptional together.</p>
+    
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea id="message" rows="5" placeholder="Project Details" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary full-width">Send Message</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 PoweredByG. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
