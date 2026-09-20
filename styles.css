@@ -8,6 +8,17 @@
   --border: #30363d;
 }
 
+#wave-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Keeps it behind your text and buttons */
+  background-color: #0f172a; /* Dark slate background, change as needed */
+  pointer-events: none; /* Allows users to click elements through the canvas */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
